@@ -14,12 +14,12 @@
       <bpmn:outgoing>SequenceFlow_18o7zqy</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sequenceFlow id="SequenceFlow_19p6k4o" sourceRef="Task_08b0zdm" targetRef="ServiceTask_Logger" />
-    <bpmn:userTask id="Task_08b0zdm" name="HumanTask1">
+    <bpmn:userTask id="Task_08b0zdm" name="HumanTask1" camunda:candidateGroups="managers">
       <bpmn:incoming>SequenceFlow1</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_19p6k4o</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sequenceFlow id="SequenceFlow_0ws7li1" sourceRef="Task_0rdxxor" targetRef="EndEvent" />
-    <bpmn:userTask id="Task_0rdxxor" name="HumanTask2">
+    <bpmn:userTask id="Task_0rdxxor" name="HumanTask2" camunda:assignee="user1" camunda:candidateUsers="user1">
       <bpmn:incoming>SequenceFlow_18o7zqy</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0ws7li1</bpmn:outgoing>
     </bpmn:userTask>
